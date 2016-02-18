@@ -10,5 +10,48 @@ html
 	script(src="jquery-1.12.0.js")
 	script(src="scripts.js")
 	body
-
-		.container
+		
+		.container.mainwrapper
+			h1 Where would you like to go?
+			hr
+			.formwrapper
+				row
+					.twelve.columns
+						label(id="question1", for="person1",) What kind of weather do you like
+						select(class="u-full-width", id="something")
+							option(id="rain", value="Option1") Wet Rainy Days
+							option(id="hot" value="Option2") Hot Summer Days
+							option(id="cold", value="Option3") Cold Snowy Days
+					
+				row
+					.twelve.columns
+						label(id="question2", for="person1",) Which word describes you best?
+						select(class="u-full-width", id="something")
+							option(id="rain", value="Option1") Laid Back
+							option(id="hot" value="Option2") Adventurous
+							option(id="cold", value="Option3") Cultured
+					
+				row
+					.twelve.columns
+						label(id="question3", for="person1",) Which of these is the reason you most want to go on vacation?
+						select(class="u-full-width", id="something")
+							option(id="rain", value="Option1") Unwind and Relax
+							option(id="hot" value="Option2") Explore New Cities
+							option(id="cold", value="Option3") Change of Scenery
+					
+				row
+					.twelve.columns
+						label(id="question4", for="person1",) What's your favorite outdoor activity?
+						select(class="u-full-width", id="something")
+							option(id="rain", value="Option1") Laying Out
+							option(id="hot" value="Option2") Running/Walking
+							option(id="cold", value="Option3") Outdoor? Eew!
+					
+				row
+					.twelve.columns
+						label(id="question5", for="person1",) Pick a dream home
+						select(class="u-full-width", id="something")
+							option(id="rain", value="Option1") Beach House
+							option(id="hot" value="Option2") A Five Star Hotel Room
+							option(id="cold", value="Option3") Log Cabin in the Woods
+					
