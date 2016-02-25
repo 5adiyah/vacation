@@ -14,44 +14,59 @@ html
 		.container.mainwrapper
 			h1 Where would you like to go?
 			hr
-			.formwrapper
-				row
-					.twelve.columns
-						label(id="question1", for="person1",) What kind of weather do you like
-						select(class="u-full-width", id="something")
-							option(id="rain", value="Option1") Wet Rainy Days
-							option(id="hot" value="Option2") Hot Summer Days
-							option(id="cold", value="Option3") Cold Snowy Days
+			#formwrapper
+				form
+					row
+						.twelve.columns
+							label(id="weather", for="person1",) What kind of weather do you like
+							select(class="u-full-width", id="sweather")
+								option(value="0") Wet Rainy Days
+								option(value="1000") Hot Summer Days
+								option(value="100") Cold Snowy Days
+						
+					row
+						.twelve.columns
+							label(id="aboutyou", for="person1",) Which word describes you best?
+							select(class="u-full-width", id="saboutyou")
+								option(value="1000") Laid Back
+								option(value="100") Adventurous
+								option(value="0") Cultured
+						
+					row
+						.twelve.columns
+							label(id="vacationreason", for="person1",) Which of these is the reason you most want to go on vacation?
+							select(class="u-full-width", id="svacationreason")
+								option(value="1000") Unwind and Relax
+								option(value="100") Explore New Cities
+								option(value="0") Change of Scenery
+						
+					row
+						.twelve.columns
+							label(id="activity", for="person1",) What's your favorite outdoor activity?
+							select(class="u-full-width", id="sactivity")
+								option(value="1000") Laying Out
+								option(value="0") Biking
+								option(value="100") Outdoor? Eew!
+						
+					row
+						.twelve.columns
+							label(id="home", for="person1",) Pick a dream home
+							select(class="u-full-width", id="shome")
+								option(value="1000") Beach House
+								option(value="100") A Five Star Hotel Room
+								option(value="0") Apartment with City views
+						.twelve.columns
+							input(type="submit", value="Submit", class="button-primary")
 					
-				row
-					.twelve.columns
-						label(id="question2", for="person1",) Which word describes you best?
-						select(class="u-full-width", id="something")
-							option(id="rain", value="Option1") Laid Back
-							option(id="hot" value="Option2") Adventurous
-							option(id="cold", value="Option3") Cultured
-					
-				row
-					.twelve.columns
-						label(id="question3", for="person1",) Which of these is the reason you most want to go on vacation?
-						select(class="u-full-width", id="something")
-							option(id="rain", value="Option1") Unwind and Relax
-							option(id="hot" value="Option2") Explore New Cities
-							option(id="cold", value="Option3") Change of Scenery
-					
-				row
-					.twelve.columns
-						label(id="question4", for="person1",) What's your favorite outdoor activity?
-						select(class="u-full-width", id="something")
-							option(id="rain", value="Option1") Laying Out
-							option(id="hot" value="Option2") Running/Walking
-							option(id="cold", value="Option3") Outdoor? Eew!
-					
-				row
-					.twelve.columns
-						label(id="question5", for="person1",) Pick a dream home
-						select(class="u-full-width", id="something")
-							option(id="rain", value="Option1") Beach House
-							option(id="hot" value="Option2") A Five Star Hotel Room
-							option(id="cold", value="Option3") Log Cabin in the Woods
-					
+					row.vacationsites
+						.twelve.columns#pdx
+							p You should vacation at Portland
+						
+					row.vacationsites
+						.twelve.columns#ny
+							p You should vacation at NY
+						
+					row.vacationsites
+						.twelve.columns#Hawaii
+							p You should vacation at Hawaii
+						

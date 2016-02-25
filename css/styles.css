@@ -5,7 +5,7 @@ body {
 .mainwrapper{
   background-color: #FFFFF7;
   width: 80%;
-  margin-top: 25%;
+  margin-top: 10%;
   border-radius: 7px;
   padding: 30px;
 }
@@ -14,4 +14,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   color: #43353D;
+}
+
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+    color: #FFF;
+    background-color: #5C9F97;
+    border-color: #5C9F97;
+}
+
+#pdx, #ny, #Hawaii{
+  display: none;
 }

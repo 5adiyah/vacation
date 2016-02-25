@@ -11,57 +11,77 @@
     <div class="container mainwrapper">
       <h1>Where would you like to go?</h1>
       <hr>
-      <div class="formwrapper">
-        <row>
-          <div class="twelve columns">
-            <label id="question1" for="person1">What kind of weather do you like</label>
-            <select id="something" class="u-full-width">
-              <option id="rain" value="Option1">Wet Rainy Days</option>
-              <option id="hot" value="Option2">Hot Summer Days</option>
-              <option id="cold" value="Option3">Cold Snowy Days</option>
-            </select>
-          </div>
-        </row>
-        <row>
-          <div class="twelve columns">
-            <label id="question2" for="person1">Which word describes you best?</label>
-            <select id="something" class="u-full-width">
-              <option id="rain" value="Option1">Laid Back</option>
-              <option id="hot" value="Option2">Adventurous</option>
-              <option id="cold" value="Option3">Cultured</option>
-            </select>
-          </div>
-        </row>
-        <row>
-          <div class="twelve columns">
-            <label id="question3" for="person1">Which of these is the reason you most want to go on vacation?</label>
-            <select id="something" class="u-full-width">
-              <option id="rain" value="Option1">Unwind and Relax</option>
-              <option id="hot" value="Option2">Explore New Cities</option>
-              <option id="cold" value="Option3">Change of Scenery</option>
-            </select>
-          </div>
-        </row>
-        <row>
-          <div class="twelve columns">
-            <label id="question4" for="person1">What's your favorite outdoor activity?</label>
-            <select id="something" class="u-full-width">
-              <option id="rain" value="Option1">Laying Out</option>
-              <option id="hot" value="Option2">Running/Walking</option>
-              <option id="cold" value="Option3">Outdoor? Eew!</option>
-            </select>
-          </div>
-        </row>
-        <row>
-          <div class="twelve columns">
-            <label id="question5" for="person1">Pick a dream home</label>
-            <select id="something" class="u-full-width">
-              <option id="rain" value="Option1">Beach House</option>
-              <option id="hot" value="Option2">A Five Star Hotel Room</option>
-              <option id="cold" value="Option3">Log Cabin in the Woods</option>
-            </select>
-          </div>
-        </row>
+      <div id="formwrapper">
+        <form>
+          <row>
+            <div class="twelve columns">
+              <label id="weather" for="person1">What kind of weather do you like</label>
+              <select id="sweather" class="u-full-width">
+                <option value="0">Wet Rainy Days</option>
+                <option value="1000">Hot Summer Days</option>
+                <option value="100">Cold Snowy Days</option>
+              </select>
+            </div>
+          </row>
+          <row>
+            <div class="twelve columns">
+              <label id="aboutyou" for="person1">Which word describes you best?</label>
+              <select id="saboutyou" class="u-full-width">
+                <option value="1000">Laid Back</option>
+                <option value="100">Adventurous</option>
+                <option value="0">Cultured</option>
+              </select>
+            </div>
+          </row>
+          <row>
+            <div class="twelve columns">
+              <label id="vacationreason" for="person1">Which of these is the reason you most want to go on vacation?</label>
+              <select id="svacationreason" class="u-full-width">
+                <option value="1000">Unwind and Relax</option>
+                <option value="100">Explore New Cities</option>
+                <option value="0">Change of Scenery</option>
+              </select>
+            </div>
+          </row>
+          <row>
+            <div class="twelve columns">
+              <label id="activity" for="person1">What's your favorite outdoor activity?</label>
+              <select id="sactivity" class="u-full-width">
+                <option value="1000">Laying Out</option>
+                <option value="0">Biking</option>
+                <option value="100">Outdoor? Eew!</option>
+              </select>
+            </div>
+          </row>
+          <row>
+            <div class="twelve columns">
+              <label id="home" for="person1">Pick a dream home</label>
+              <select id="shome" class="u-full-width">
+                <option value="1000">Beach House</option>
+                <option value="100">A Five Star Hotel Room</option>
+                <option value="0">Apartment with City views</option>
+              </select>
+            </div>
+            <div class="twelve columns">
+              <input type="submit" value="Submit" class="button-primary">
+            </div>
+          </row>
+          <row class="vacationsites">
+            <div id="pdx" class="twelve columns">
+              <p>You should vacation at Portland</p>
+            </div>
+          </row>
+          <row class="vacationsites">
+            <div id="ny" class="twelve columns">
+              <p>You should vacation at NY</p>
+            </div>
+          </row>
+          <row class="vacationsites">
+            <div id="Hawaii" class="twelve columns">
+              <p>You should vacation at Hawaii</p>
+            </div>
+          </row>
+        </form>
       </div>
     </div>
   </body>
